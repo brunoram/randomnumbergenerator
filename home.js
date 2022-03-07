@@ -12,7 +12,7 @@ function callAPI(event)
     const form=document.querySelector("#form");
     const n=form.n.value;
    
-    fetch('https://rdtl82jl5j.execute-api.eu-central-1.amazonaws.com/default/yout?n='+n).then(onResponse).then(onJSON); 
+    fetch('YOUR_URL/default/yout?n='+n).then(onResponse).then(onJSON); //Insert YOUR URL for Lambda function
 }
 
 function onResponse(response){
